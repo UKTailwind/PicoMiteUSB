@@ -44,10 +44,13 @@ add_executable(PicoMiteUSB
 	hxcmod.c
     VS1053.c
 )
-set_source_files_properties(mmc_stm32.c PROPERTIES COMPILE_FLAGS -O3)
+set_source_files_properties(mmc_stm32.c PROPERTIES COMPILE_FLAGS -O2)
 set_source_files_properties(ff.c PROPERTIES COMPILE_FLAGS -Os)
 set_source_files_properties(GUI.c PROPERTIES COMPILE_FLAGS -Os)
 set_source_files_properties(BmpDecoder.c PROPERTIES COMPILE_FLAGS -Os)
+set_source_files_properties(GPS.c PROPERTIES COMPILE_FLAGS -Os)
+set_source_files_properties(I2C.c PROPERTIES COMPILE_FLAGS -Os)
+set_source_files_properties(lfs.c PROPERTIES COMPILE_FLAGS -Os)
 set_source_files_properties(picojpeg.c PROPERTIES COMPILE_FLAGS -Os)
 set_source_files_properties(regex.c PROPERTIES COMPILE_FLAGS -Os)
 set_source_files_properties(hxcmod.c PROPERTIES COMPILE_FLAGS -Os)
